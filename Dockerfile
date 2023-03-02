@@ -6,7 +6,7 @@ COPY php.ini /usr/local/etc/php/
 COPY ports.conf /etc/apache2/
 COPY 000-default.conf /etc/apache2/sites-available/
 RUN mkdir -p /etc/ssl/private
-COPY contegris* /etc/ssl/private/
+COPY server* /etc/ssl/private/
 
 RUN pecl install mongodb \
     && apt-get update \

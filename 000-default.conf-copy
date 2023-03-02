@@ -8,8 +8,8 @@
 
                 SSLEngine on
 
-                SSLCertificateFile      /etc/ssl/private/contegris_com.crt
-                SSLCertificateKeyFile /etc/ssl/private/contegris.key
+                SSLCertificateFile      /etc/ssl/private/server.crt
+                SSLCertificateKeyFile /etc/ssl/private/server.key
 
                 <FilesMatch "\.(cgi|shtml|phtml|php)$">
                                 SSLOptions +StdEnvVars
